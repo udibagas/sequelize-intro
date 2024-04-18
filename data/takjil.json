@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "name": "Es Buah",
+    "price": 10000,
+    "stock": 100,
+    "category": "Minuman",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Sop Buah",
+    "price": 15000,
+    "stock": 100,
+    "category": "Minuman",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Es Cincau",
+    "price": 15000,
+    "stock": 34,
+    "category": "Minuman",
+    "expiredDate": "2024-03-15",
+    "available": false
+  },
+  {
+    "name": "Es Cendol",
+    "price": 10000,
+    "stock": 60,
+    "category": "Minuman",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Es Teh",
+    "price": 5000,
+    "stock": 100,
+    "category": "Minuman",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Es Timun Suri",
+    "price": 5000,
+    "stock": 100,
+    "category": "Minuman",
+    "expiredDate": "2024-03-15",
+    "available": false
+  },
+  {
+    "name": "Tahu Isi",
+    "price": 2500,
+    "stock": 0,
+    "category": "Makanan",
+    "expiredDate": "2024-03-14",
+    "available": true
+  },
+  {
+    "name": "Tempe Mendoan",
+    "price": 2000,
+    "stock": 100,
+    "category": "Makanan",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Bakwan Jagung",
+    "price": 2000,
+    "stock": 30,
+    "category": "Makanan",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Risol Mayo",
+    "price": 3000,
+    "stock": 100,
+    "category": "Makanan",
+    "expiredDate": "2024-03-15",
+    "available": false
+  },
+  {
+    "name": "Puding",
+    "price": 3000,
+    "stock": 20,
+    "category": "Makanan",
+    "expiredDate": "2024-03-14",
+    "available": false
+  },
+  {
+    "name": "Lontong",
+    "price": 3000,
+    "stock": 120,
+    "category": "Makanan",
+    "expiredDate": "2024-03-14",
+    "available": false
+  },
+  {
+    "name": "Lupis",
+    "price": 5000,
+    "stock": 10,
+    "category": "Makanan",
+    "expiredDate": "2024-03-15",
+    "available": true
+  },
+  {
+    "name": "Kurma",
+    "price": 5000,
+    "stock": 20,
+    "category": "Makanan",
+    "expiredDate": "2024-03-30",
+    "available": true
+  }
+]

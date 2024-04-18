@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Kienan",
+    "last_name": "Russen",
+    "email": "krussen0@wired.com",
+    "gender": "M",
+    "dateOfBirth": "2008-01-08"
+  },
+  {
+    "id": 2,
+    "first_name": "Trixy",
+    "last_name": "Yakovlev",
+    "email": "tyakovlev1@aol.com",
+    "gender": "F",
+    "dateOfBirth": "2007-01-24"
+  },
+  {
+    "id": 3,
+    "first_name": "Rollins",
+    "last_name": "Saffin",
+    "email": "rsaffin2@tinyurl.com",
+    "gender": "M",
+    "dateOfBirth": "2009-11-08"
+  },
+  {
+    "id": 4,
+    "first_name": "Darby",
+    "last_name": "Leggen",
+    "email": "dleggen3@networksolutions.com",
+    "gender": "F",
+    "dateOfBirth": "2007-05-20"
+  },
+  {
+    "id": 5,
+    "first_name": "Joyan",
+    "last_name": "Lamble",
+    "email": "jlamble4@state.gov",
+    "gender": "F",
+    "dateOfBirth": "2001-02-07"
+  },
+  {
+    "id": 6,
+    "first_name": "Horatia",
+    "last_name": "Tookey",
+    "email": "htookey5@addtoany.com",
+    "gender": "F",
+    "dateOfBirth": "2002-04-30"
+  },
+  {
+    "id": 7,
+    "first_name": "Ber",
+    "last_name": "Bayston",
+    "email": "bbayston6@diigo.com",
+    "gender": "M",
+    "dateOfBirth": "2005-03-13"
+  },
+  {
+    "id": 8,
+    "first_name": "Talyah",
+    "last_name": "Gatherell",
+    "email": "tgatherell7@ucoz.ru",
+    "gender": "F",
+    "dateOfBirth": "2002-10-16"
+  },
+  {
+    "id": 9,
+    "first_name": "Amandy",
+    "last_name": "Forsythe",
+    "email": "aforsythe8@slate.com",
+    "gender": "F",
+    "dateOfBirth": "2009-02-28"
+  },
+  {
+    "id": 10,
+    "first_name": "Waylin",
+    "last_name": "Higford",
+    "email": "whigford9@usda.gov",
+    "gender": "M",
+    "dateOfBirth": "2005-06-21"
+  }
+]
