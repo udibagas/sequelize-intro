@@ -1,1 +1,0 @@
-npx sequelize-cli model:generate --name Food --attributes name:string,price:integer,stock:integer,category:string,expiredDate:date

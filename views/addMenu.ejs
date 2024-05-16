@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add menu</title>
+  </head>
+  <body>
+    <h1>Add Menu</h1>
+
+    <form method="post">
+      <p>
+        <label for="name">Name</label> <br />
+        <input type="text" name="name" id="name" />
+      </p>
+
+      <p>
+        <label for="price">Price</label> <br />
+        <input type="number" name="price" id="price" />
+      </p>
+
+      <p>
+        <label for="stock">Stock</label> <br />
+        <input type="number" name="stock" id="stock" />
+      </p>
+
+      <p>
+        <label for="stock">Category</label> <br />
+        <input type="radio" name="category" value="Makanan" id="makanan" />
+        <label for="makanan">Makanan</label>
+
+        <input type="radio" name="category" value="Minuman" id="minuman" />
+        <label for="minuman">Minuman</label>
+      </p>
+
+      <p>
+        <label for="expiredDate">Expired Date</label> <br />
+        <input type="date" name="expiredDate" id="expiredDate" />
+      </p>
+
+      <p>
+        <button type="submit">Save</button>
+      </p>
+    </form>
+  </body>
+</html>

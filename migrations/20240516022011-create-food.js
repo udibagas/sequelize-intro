@@ -1,17 +1,18 @@
 "use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
+  //! dijalankan ketika menjalankan command db:migrate
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("Food", {
       id: {
         allowNull: false, // NOT NULL
         autoIncrement: true, // SERIAL
-        primaryKey: true, // PRIMARY KEY
-        type: Sequelize.INTEGER, // INTEGER
+        primaryKey: true, // PRIMARY KRY
+        type: Sequelize.INTEGER,
       },
       name: {
         type: Sequelize.STRING(50), // VARCHAR(50)
-        allowNull: false,
+        allowNull: false, // NOT NULL
         unique: true, // UNIQUE
       },
       price: {
@@ -21,27 +22,27 @@ module.exports = {
       stock: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        defaultValue: 0, // DEFAULT 0
       },
       category: {
         type: "VARCHAR(30)",
         allowNull: false,
       },
       expiredDate: {
-        type: Sequelize.DATE, // TIMESTAMP WITH TIME ZONE
+        type: Sequelize.DATE,
         allowNull: false,
       },
       createdAt: {
-        allowNull: false, // NOT NULL
+        allowNull: false,
         type: Sequelize.DATE,
       },
       updatedAt: {
-        allowNull: false, // NOT NULL
+        allowNull: false,
         type: Sequelize.DATE,
       },
     });
   },
 
+  //! dijalankan ketika menjalankan command db:migrate:undo
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable("Food");
   },

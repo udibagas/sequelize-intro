@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food List</title>
+    <style>
+      .report {
+        background-color: antiquewhite;
+        padding: 10px;
+        border: 1px solid #ddd;
+        width: 500px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Food List</h1>
+
+    <p>
+      <a href="/add">Add New Menu</a>
+    </p>
+
+    <div class="report">
+      Jumlah menu = <%= jumlahMenu %> <br />
+      Paling Murah = <%= murah %> <br />
+      Paling Mahal = <%= mahal %> <br />
+      Harga Rata - Rata = <%= avg %> <br />
+      Total stock = <%= total %>
+    </div>
+
+    <form>
+      <input type="radio" name="category" value="Makanan" id="makanan" />
+      <label for="makanan">Makanan</label>
+
+      <input type="radio" name="category" value="Minuman" id="minuman" />
+      <label for="minuman">Minuman</label>
+
+      <input type="text" name="keyword" placeholder="Keyword" />
+
+      <button type="submit">Filter</button>
+    </form>
+
+    <br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Category</th>
+          <th>Expired Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% food.forEach((el, i) => { %>
+        <tr>
+          <td><%= ++i %></td>
+          <td><%= el.name %></td>
+          <td><%= el.formattedPrice %></td>
+          <td><%= el.stock %></td>
+          <td><%= el.category %></td>
+          <td><%= el.getExpiredDate() %></td>
+          <td><%= el.status %></td>
+          <td>
+            <a href="/edit/<%= el.id  %>">Edit</a> |
+            <a href="/delete/<%= el.id  %>">Delete</a> |
+            <a href="/increase-stock/<%= el.id  %>">+ Stock</a> |
+            <a href="/decrease-stock/<%= el.id  %>">- Stock</a>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>
