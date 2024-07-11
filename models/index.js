@@ -21,7 +21,7 @@ if (config.use_env_variable) {
   );
 }
 
-fs.readdirSync(__dirname) // ['index.js', 'food.js', ..]
+fs.readdirSync(__dirname)
   .filter((file) => {
     return (
       file.indexOf(".") !== 0 &&
@@ -29,14 +29,14 @@ fs.readdirSync(__dirname) // ['index.js', 'food.js', ..]
       file.slice(-3) === ".js" &&
       file.indexOf(".test.js") === -1
     );
-  }) // ['food.js']
+  }) // ['user.js']
   .forEach((file) => {
     const model = require(path.join(__dirname, file))(
       sequelize,
       Sequelize.DataTypes
-    );
-    db[model.name] = model; // db.Food = Food
-  }); // db = { Food: Food, ...}
+    ); // User (class)
+    db[model.name] = model; // db = { User: User }
+  });
 
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
@@ -44,7 +44,7 @@ Object.keys(db).forEach((modelName) => {
   }
 });
 
-db.sequelize = sequelize; // db = { Food, sequelize }
-db.Sequelize = Sequelize; // db = { Food, sequelize,  Sequelize}
+db.sequelize = sequelize; // db = { User: User, sequelize: sequelzie }
+db.Sequelize = Sequelize; // db = { User, sequelize, Sequelize }
 
 module.exports = db;
