@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Food</h1>
+
+    <form style="margin-bottom: 20px">
+      <input type="text" name="q" placeholder="Search food" />
+      <select name="order">
+        <option selected disabled>-- Order --</option>
+        <option value="asc">Termurah</option>
+        <option value="desc">Termahal</option>
+      </select>
+
+      <button type="submit">Filter</button>
+    </form>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Expired Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% food.forEach(el => { %>
+        <tr>
+          <td><%= el.name %></td>
+          <td><%= el.category %></td>
+          <td><%= el.priceInRupiah %></td>
+          <td><%= el.stock %></td>
+          <td><%= el.getFormattedExpiredDate() %></td>
+          <td><%= el.statusLabel %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

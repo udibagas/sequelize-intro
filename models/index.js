@@ -29,13 +29,13 @@ fs.readdirSync(__dirname)
       file.slice(-3) === ".js" &&
       file.indexOf(".test.js") === -1
     );
-  }) // ['user.js']
+  })
   .forEach((file) => {
     const model = require(path.join(__dirname, file))(
       sequelize,
       Sequelize.DataTypes
-    ); // User (class)
-    db[model.name] = model; // db = { User: User }
+    );
+    db[model.name] = model; // db = {Food: Food}
   });
 
 Object.keys(db).forEach((modelName) => {
@@ -44,7 +44,7 @@ Object.keys(db).forEach((modelName) => {
   }
 });
 
-db.sequelize = sequelize; // db = { User: User, sequelize: sequelzie }
-db.Sequelize = Sequelize; // db = { User, sequelize, Sequelize }
+db.sequelize = sequelize;
+db.Sequelize = Sequelize;
 
-module.exports = db;
+module.exports = db; //  { sequelize, Sequelize, Food }
