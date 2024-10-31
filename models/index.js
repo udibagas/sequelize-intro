@@ -9,6 +9,7 @@ const env = process.env.NODE_ENV || "development";
 const config = require(__dirname + "/../config/config.json")[env];
 const db = {};
 
+// create connection
 let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
@@ -21,7 +22,7 @@ if (config.use_env_variable) {
   );
 }
 
-fs.readdirSync(__dirname)
+fs.readdirSync(__dirname) // ['index.js', 'product.js']
   .filter((file) => {
     return (
       file.indexOf(".") !== 0 &&
@@ -29,22 +30,22 @@ fs.readdirSync(__dirname)
       file.slice(-3) === ".js" &&
       file.indexOf(".test.js") === -1
     );
-  })
+  }) // ['product.js']
   .forEach((file) => {
     const model = require(path.join(__dirname, file))(
       sequelize,
       Sequelize.DataTypes
     );
-    db[model.name] = model; // db = {Food: Food}
-  });
+    db[model.name] = model; // db['Product'] = Product
+  }); // db = { Product: Product }
 
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
-    db[modelName].associate(db);
+    db[modelName].associate(db); // { Product: Product }
   }
 });
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+db.sequelize = sequelize; // { Product: Product, sequelize: sequelize }
+db.Sequelize = Sequelize; // { Product, sequelize, Sequelize }
 
-module.exports = db; //  { sequelize, Sequelize, Food }
+module.exports = db; // { Product, sequelize, Sequelize }

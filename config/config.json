@@ -2,9 +2,10 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "test123",
+    "database": "my_store_sequelize",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "port": 5432
   },
   "test": {
     "username": "root",

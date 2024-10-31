@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+  </head>
+  <body>
+    <h1>Edit Product</h1>
+
+    <form method="post">
+      <p>
+        <label for="name">Name</label>: <br />
+        <input type="text" name="name" value="<%= product.name  %>" />
+      </p>
+
+      <p>
+        <label for="price">Price</label>: <br />
+        <input type="number" name="price" value="<%= product.price  %>" />
+      </p>
+
+      <p>
+        <label for="stock">Stock</label>: <br />
+        <input type="number" name="stock" value="<%= product.stock  %>" />
+      </p>
+
+      <p>
+        <label for="stock">Status</label>: <br />
+        <select name="status" id="status">
+          <option value="">-- Select Status --</option>
+          <option value="1" <%= product.status ? 'selected' : '' %>>Available</option>
+          <option value="0" <%= !product.status ? 'selected' : '' %>>Discontinued</option>
+        </select>
+      </p>
+
+      <p>
+        <button type="submit">Save</button>
+      </p>
+    </form>
+  </body>
+</html>

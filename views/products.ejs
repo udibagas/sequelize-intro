@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <body>
+    <h1>Products</h1>
+
+    <div>
+      Total product = <%= totalProduct %> item <br />
+      Min Price = <%= summary.minPrice %> <br />
+      Max Price = <%= summary.maxPrice %> <br />
+      Avg Price = <%= summary.avgPrice %> <br />
+      Total Stock = <%= summary.totalStock %>
+    </div>
+
+    <br />
+
+    <form>
+      <input type="text" placeholder="Search" name="keyword" />
+      <select name="status" id="status">
+        <option value="">-- Select Status --</option>
+        <option value="1">Available</option>
+        <option value="0">Discontinued</option>
+      </select>
+      <button type="submit">Search</button>
+      <a href="/products/add">Add New Product</a>
+    </form>
+
+    <br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Last Update</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% products.forEach((el, index) => { %>
+        <tr>
+          <td><%= ++index %></td>
+          <td>
+            <a href="/products/<%= el.id %>"> <%= el.name %> </a>
+          </td>
+          <td><%= el.formattedPrice %></td>
+          <td><%= el.stock %> pcs</td>
+          <td><%= el.getLastUpdate() %></td>
+          <td><%= el.statusLabel %></td>
+          <td>
+            <a href="/products/<%= el.id  %>/edit">Edit</a> |
+            <a href="/products/<%= el.id  %>/delete">Delete</a> |
+            <a href="/products/<%= el.id  %>/buy">Buy</a>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

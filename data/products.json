@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Horseradish Root",
+    "price": 73000,
+    "stock": 37
+  },
+  {
+    "id": 2,
+    "name": "Dried Apple",
+    "price": 18000,
+    "stock": 94
+  },
+  {
+    "id": 3,
+    "name": "Mcguinness - Blue Curacao",
+    "price": 4000,
+    "stock": 93
+  },
+  {
+    "id": 4,
+    "name": "Squid Ink",
+    "price": 96000,
+    "stock": 60
+  },
+  {
+    "id": 5,
+    "name": "Wine - Ruffino Chianti",
+    "price": 49000,
+    "stock": 38
+  },
+  {
+    "id": 6,
+    "name": "Veal - Striploin",
+    "price": 95000,
+    "stock": 42
+  },
+  {
+    "id": 7,
+    "name": "Pasta - Orzo, Dry",
+    "price": 85000,
+    "stock": 38
+  },
+  {
+    "id": 8,
+    "name": "Lemonade - Pineapple Passion",
+    "price": 93000,
+    "stock": 58
+  },
+  {
+    "id": 9,
+    "name": "Soup - Beef Conomme, Dry",
+    "price": 25000,
+    "stock": 41
+  },
+  {
+    "id": 10,
+    "name": "Sauce - Soya, Dark",
+    "price": 95000,
+    "stock": 33
+  },
+  {
+    "id": 11,
+    "name": "Cake Circle, Foil, Scallop",
+    "price": 40000,
+    "stock": 77
+  },
+  {
+    "id": 12,
+    "name": "Roe - Lump Fish, Red",
+    "price": 22000,
+    "stock": 72
+  },
+  {
+    "id": 13,
+    "name": "Ham - Cooked Bayonne Tinned",
+    "price": 7000,
+    "stock": 59
+  },
+  {
+    "id": 14,
+    "name": "Bay Leaf Ground",
+    "price": 16000,
+    "stock": 92
+  },
+  {
+    "id": 15,
+    "name": "Doilies - 8, Paper",
+    "price": 72000,
+    "stock": 98
+  },
+  {
+    "id": 16,
+    "name": "Wine - Placido Pinot Grigo",
+    "price": 85000,
+    "stock": 80
+  },
+  {
+    "id": 17,
+    "name": "Crackers - Trio",
+    "price": 51000,
+    "stock": 61
+  },
+  {
+    "id": 18,
+    "name": "Black Currants",
+    "price": 23000,
+    "stock": 40
+  },
+  {
+    "id": 19,
+    "name": "Ice Cream Bar - Oreo Cone",
+    "price": 52000,
+    "stock": 68
+  },
+  {
+    "id": 20,
+    "name": "Jameson - Irish Whiskey",
+    "price": 88000,
+    "stock": 71
+  }
+]
